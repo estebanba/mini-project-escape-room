@@ -1,4 +1,4 @@
-from modules import objects
+import objects
 
 def start_game(game_state):
     """
