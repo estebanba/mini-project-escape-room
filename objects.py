@@ -29,19 +29,23 @@ dining_table = {
 door_a = {
     "name": "door a",
     "type": "door",
+    "locked": True
 }
 
 door_b = {
     "name": "door b",
     "type": "door",
+    "locked": True
 }
 door_c = {
     "name": "door c",
     "type": "door",
+    "locked": True
 }
 door_d = {
     "name": "door d",
     "type": "door",
+    "locked": True
 }
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -51,6 +55,7 @@ key_a = {
     "type": "key",
     "target": door_a,
 }
+
 key_b = {
     "name": "key for door b",
     "type": "key",
@@ -68,8 +73,6 @@ key_d = {
     "type": "key",
     "target": door_d,
 }
-
-
 
 game_room = {
     "name": "game room",
