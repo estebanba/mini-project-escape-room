@@ -16,25 +16,23 @@ def play_room(room, game_state):
     game_state["current_room"] = room
     if(game_state["current_room"] == game_state["target_room"]):
         print("Congrats! You escaped the room!")
-        return
     else:
         print("You are now in " + room["name"])
         intended_action = input("What would you like to do? Type 'explore' or 'examine' or 'move room':?").strip()
         if intended_action == "explore":
             explore_room(room)
-            play_room(room, game_state)
+            # play_room(room, game_state)
         # elif intended_action == "unlock door":
         #     unlock_door(room)
         elif intended_action == "move room":
             move_room(room, game_state)
-            play_room(room, game_state)
+            # play_room(room, game_state)
         elif intended_action == "examine":
             examine_item(input("What would you like to examine?").strip(), game_state)
-            play_room(room, game_state)
         else:
             print("Not sure what you mean. Type 'explore' or 'examine'.")
-            play_room(room, game_state)
-    # play_room(room, game_state)
+            # play_room(room, game_state)
+    play_room(room, game_state)
     linebreak()
         
 
